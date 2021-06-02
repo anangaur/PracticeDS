@@ -42,7 +42,9 @@ public class practiceMatrix {
 	private static void union(ArrayList<Set<Integer>> planList, int i, int j) {
 		Set<Integer> setI = planList.get(i);
 		Set<Integer> setj = planList.get(j);
-		if(setI == setj) return;
+		if(setI == setj) {
+			return;
+		}
 		
 		setI.addAll(setj);
 		for(var setVal: setI) {
